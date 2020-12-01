@@ -264,7 +264,7 @@
             oldMousePoint.x = e.clientX;
             oldMousePoint.y = e.clientY;
         };
-
+        // window.addEventListener('mousemove', mouseMove);
         window.addEventListener('pointermove', mouseMove);
 
         blob.canvas = canvas;

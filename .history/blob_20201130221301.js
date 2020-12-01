@@ -10,6 +10,7 @@
         init() {
             for (let i = 0; i < this.numPoints; i++) {
             let point = new Point(this.divisional * (i + 1), this);
+            point.acceleration = -1 + Math.random() * 2;
             this.push(point);
             }
         }
@@ -264,7 +265,7 @@
             oldMousePoint.x = e.clientX;
             oldMousePoint.y = e.clientY;
         };
-
+        // window.addEventListener('mousemove', mouseMove);
         window.addEventListener('pointermove', mouseMove);
 
         blob.canvas = canvas;
