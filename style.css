@@ -1,0 +1,45 @@
+body,
+html {
+	background: white;
+	margin: 0;
+	height: 100vh;
+}
+
+canvas {
+	position: absolute;
+}
+
+button {
+	padding: 10px;
+	border-radius: 20px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: #000000;
+	box-shadow: 3px 3px 5px 0px rgba(255, 0, 0, 0.3);
+}
+
+.text-light {
+	position: absolute;
+	left: 43%;
+	top: 45%;
+	font-family: Roboto;
+	color: red;
+	mix-blend-mode: difference;
+	z-index: 100;
+	user-select: none;
+}
+
+.text-light:first-child {
+	top: 18%;
+	font-size: 200px;
+}
+
+.text-light:nth-child(2) {
+	top: 45%;
+	font-size: 50px;
+}
+
+.text-light:nth-child(3) {
+	top: 55%;
+}
